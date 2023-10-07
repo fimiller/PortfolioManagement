@@ -13,12 +13,17 @@ if __name__ == "__main__":
     # print(df)
     # df = returnsDownload.dateRangeReturnsData(assets, start = "2021-01-01",end = "2021-12-31")
     # print(df)
-    rebalances = 12 
-    lookback = 2
-    dfs = returnsDownload.generateReturnsSet(assets, datetime.datetime(2021,1,1), T, interval, rebalances, lookback) 
+    rebalances = 2 
+    lookback = 1 
+    endDateForTest = datetime.datetime(2021,1,1)
+    dfs = returnsDownload.generateReturnsSet(assets,endDateForTest , T, interval, rebalances, lookback) 
     print(dfs.keys())
     for i in range(rebalances):
-        print("i = ", i)
-        print(dfs[i].head())
-        print(dfs[i].tail())
-        print("-----------------")
+        print("================\n i = ", i)
+        # print(dfs[i].head())
+        # print(dfs[i].tail())
+        
+        print(dfs[i])
+        # print(dfs[i].index[0], "  ", dfs[i].index[-1])
+        # print(dfs[i].index[0].strftime("%Y-%m-%d"))
+        returnsDownload.saveReturnsData(dfs[i],"_".join(assets) + "_" + dfs[i].index[0].strftime("%Y-%m-%d")+ "_" + dfs[i].index[-1].strftime("%Y-%m-%d"))

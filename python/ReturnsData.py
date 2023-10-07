@@ -7,6 +7,7 @@ class ReturnsData():
 
     def __init__(self) -> None:
         print("initialized object")
+        # TODO: Put the assets, time horizon, interval, price, etc. in the object 
 
     def computeLogReturns(self, df:pd.DataFrame, price = "Adj Close") -> pd.DataFrame:
         """
@@ -54,9 +55,15 @@ class ReturnsData():
 
     
     
-    def saveReturnsData(self, df: pd.DataFrame) -> None:
-        print("Saving Data")
+    def saveReturnsData(self, df: pd.DataFrame, name:str) -> None:
+        # print("Saving Data")
         # name convention: assetNames_dateRange.npy
+        s = df.to_numpy().T # so each row is a
+        # print("name = ", name)
+        with open("../data/" + name + ".npy", "wb") as f:
+            np.save(f, s)
+        
+        
 
 
     def generateReturnsSet(self, assets:list, startDate:datetime, T, interval, rebalances, lookback:int, verbose = False):
