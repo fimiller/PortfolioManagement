@@ -1,1 +1,7 @@
-None at the moment.
+strategy to try: 
+https://dl.acm.org/doi/abs/10.1145/3533271.3561707
+
+other things worth investigating 
+https://arxiv.org/abs/2111.12248 - risk measures 
+https://browse.arxiv.org/pdf/2111.07701.pdf - Option pricing  
+Classical option pricing - Black Scholes for European and American using Monte Carlo (Glasserman book & Shreve II likely)

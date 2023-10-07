@@ -1,5 +1,7 @@
 # using COSMO, JuMP, LinearAlgebra
 using NPZ
+using LinearAlgebra
+# TODO get the imports working (COSMO, JuMP, Mosek, ...)
 
 println("Hello World")
 
@@ -23,4 +25,13 @@ Outline:
 3. Delete the data generated from python
     To save the space on my computer 
 
+
+
 """
+
+# TODO organize the julia side of things. Core data types / objects that I will use
+
+# TODO figure out analysis script ideas beyond plotting a time series 
+
+# TODO strategies: 1 / n weights , just the S&P 500, Markowitz ( no risk free asset), Markowitz (with risk free), minimizing against VaR and CVaR (expected shortfall)
+# Peng & Linetsky approach, see UsefulLinks.txt for paper link
