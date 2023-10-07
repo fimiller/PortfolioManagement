@@ -1,4 +1,5 @@
 # using COSMO, JuMP, LinearAlgebra
+using NPZ
 
 println("Hello World")
 
@@ -6,6 +7,7 @@ assets = ["MSFT", "NVDA", "GOOGL"]
 T = "1y"
 interval = "1d"
 
+data = npzread("AAPL_MSFT_GOOGL_2020-11-03_2020-11-30.npy")
 """
 Outline:
 
