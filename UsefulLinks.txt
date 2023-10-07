@@ -1,0 +1,5 @@
+
+for how to call my download data functions from Julia 
+https://stackoverflow.com/questions/66648841/how-to-call-a-python-function-from-a-julia-program
+
+https://github.com/JuliaPy/PyCall.jl < PyCall documentation
