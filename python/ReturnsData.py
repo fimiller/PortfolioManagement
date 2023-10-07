@@ -18,7 +18,7 @@ class ReturnsData():
 
 
         
-    def TimeHorizonReturnsData(self, assets:list, T:str, interval:str, price:str = "Adj Close") -> pd.DataFrame:
+    def timeHorizonReturnsData(self, assets:list, T:str, interval:str, price:str = "Adj Close") -> pd.DataFrame:
         """
         generate log return data from T to the present 
         assets: list of ticker names (string)
@@ -42,8 +42,22 @@ class ReturnsData():
         df = yf.download(assets, start = start, end = end, interval = interval) # download tickers 
         return self.computeLogReturns(df, price) 
 
+    def dayReturn(self, assets: list, dateBefore:str, dateAfter:str, interval:str, price:str) -> pd>pd.DataFrame:
+        """
+        Generate the return for a given day
+        """
+        pass
+
+
+    
     
     def saveReturnsData(self, df: pd.DataFrame) -> None:
         print("Saving Data")
-        
+        # TODO: Write this function to save returns as a single .npy file 
+        # name convention: assetNames_dateRange.npy
 
+
+    def generateReturnsSet(self, assets:list, T, interval, rebalance_period):
+        
+        
+        pass
