@@ -20,7 +20,7 @@ This is in python. Currently do not have sliding windows of data.
         - Value at Risk as a risk measure instead of variance
         - Expected Shortfall as a risk measure instead of variance 
         - Adding upper and lower investment limits ($\ell_{i} \leq w_i \leq u_{i} \forall i \in \{1,\dots,n \}$)
-    - Peng & Linetsky "Portfolio Selection: A Statistical Learning Approach" paper for inspiration firstly 
+    - Peng & Linetsky "Portfolio Selection: A Statistical Learning Approach" paper for inspiration 
 3. Portfolio Analytics in Julia 
     - Time series of results 
     - Sharpe and Sortino Ratio
