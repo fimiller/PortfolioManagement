@@ -22,4 +22,5 @@ if __name__ == "__main__":
         print("================\n i = ", i)
         print(dfs[i].head())
         print(dfs[i].tail())
+        print(dfs[i].to_numpy()[:,0])
         returnsDownload.saveReturnsData(dfs[i],"_".join(assets) + "_" + dfs[i].index[0].strftime("%Y-%m-%d")+ "_" + dfs[i].index[-1].strftime("%Y-%m-%d"))

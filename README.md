@@ -3,7 +3,11 @@ I do **not** endorse using these strategies with any of your actual money. Pleas
 
 # Portfolio Management
 
-This is a repository where I am investigating quantitative portfolio management strategies using mathematical optimization techniques. This is a hobby project of mine.
+This is a repository where I am investigating quantitative portfolio management strategies using mathematical optimization techniques. This is a hobby project of mine. The notes below are mostly for myself.
+
+## Assumptions Made
+1. Most of the Black Scholes assumptions.
+2. Stocks pay no dividends.
 
 ## Strategies Present 
 This is in Julia 

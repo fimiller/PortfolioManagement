@@ -58,7 +58,7 @@ class ReturnsData():
     def saveReturnsData(self, df: pd.DataFrame, name:str) -> None:
         # print("Saving Data")
         # name convention: assetNames_dateRange.npy
-        s = df.to_numpy().T # so each row is a
+        s = df.to_numpy() # so each column is a stock
         # print("name = ", name)
         with open("../data/" + name + ".npy", "wb") as f:
             np.save(f, s)
