@@ -63,6 +63,7 @@ function plotTotalReturns(returns, dateRange,strategyNames, initInvestment)
     """
     # TODO change x axis to be dates ,  use #  xlims = Dates.value.([min_date, max_date])
     realDollars =  initInvestment * (exp.(cumsum(returns, dims = 1))) # add in log returns as they are additive 
+    # TODO decide if you need to do initInvestment * (exp.(cumsum(returns, dims = 1)) .- 1) instead 
     display(plot!(realDollars, legend=:bottomright, label = strategyNames))
     title!("Returns for " * dateRange)
     xlabel!("Time Step")
