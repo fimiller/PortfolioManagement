@@ -6,6 +6,7 @@ I do **not** endorse using these strategies with any of your actual money. Pleas
 This is a repository where I am investigating quantitative portfolio management strategies using mathematical optimization techniques. This is a hobby project of mine. The notes below are mostly for myself.
 
 ## Assumptions Made
+These are some of the initial assumptions that most of the strategies will use. 
 1. Most of the Black Scholes assumptions.
 2. Stocks pay no dividends.
 
