@@ -1,6 +1,6 @@
 strategy to try: 
 https://dl.acm.org/doi/abs/10.1145/3533271.3561707
-
+https://pubsonline.informs.org/doi/pdf/10.1287/moor.28.1.1.14260?casa_token=teTRtE6UJbQAAAAA:S6M8hQv2bo3kXc6hCBItj6Wq8h3SDHE75NZ6mOvuKe3FecIEu-EZoJoD6aQOah0fQxjIOK7InHb2
 other things worth investigating 
 https://arxiv.org/abs/2111.12248 - risk measures 
 https://browse.arxiv.org/pdf/2111.07701.pdf - Option pricing  
