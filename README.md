@@ -26,6 +26,8 @@ This is in python. Currently do not have sliding windows of data.
         - Expected Shortfall as a risk measure instead of variance 
         - Adding upper and lower investment limits ($\ell_{i} \leq w_i \leq u_{i} \forall i \in \{1,\dots,n \}$)
     - Peng & Linetsky "Portfolio Selection: A Statistical Learning Approach" paper for inspiration 
+    - Verify solution of Merton's portfolio problem
+    - Try implementing methods that consider dividends, transaction costs, leverage (other regulations and taxes broadly speaking)
 3. Portfolio Analytics in Julia 
     - Time series of results 
     - Sharpe and Sortino Ratio
