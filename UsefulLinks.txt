@@ -5,3 +5,4 @@ other things worth investigating
 https://arxiv.org/abs/2111.12248 - risk measures 
 https://browse.arxiv.org/pdf/2111.07701.pdf - Option pricing  
 Classical option pricing - Black Scholes for European and American using Monte Carlo (Glasserman book & Shreve II likely)
+https://www.ise.ufl.edu/uryasev/files/2011/11/kro_CVaR.pdf
