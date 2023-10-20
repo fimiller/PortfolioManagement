@@ -63,11 +63,12 @@ function plotTotalReturns(returns, dateRange,strategyNames, initInvestment)
     """
     # TODO change x axis to be dates ,  use #  xlims = Dates.value.([min_date, max_date])
     realDollars =  initInvestment * (exp.(cumsum(returns, dims = 1))) # add in log returns as they are additive 
-    # TODO decide if you need to do initInvestment * (exp.(cumsum(returns, dims = 1)) .- 1) instead 
+    # TODO decide if you need to do initInvestment * (exp.(cumsum(returns, dims = 1)) .- 1) instead. need to figure out if it is right 
     display(plot!(realDollars, legend=:bottomright, label = strategyNames))
     title!("Returns for " * dateRange)
     xlabel!("Time Step")
     ylabel!("Real Dollars (Portfolio Value)")
+    
     ylims!(minimum(realDollars) - 25, maximum(realDollars) + 25) # might want to log plot instead, TODO: fix this line, make 25 a parameter
 end
 
@@ -86,6 +87,12 @@ function equalWeights(data)
 
     Will all the datasets be given here? or just each time step individually
     """
+    n = size(data)[2] # total number of assets 
+
+    w = ones(n) / n 
+
+    return executeWeightsPortfolio(w, data)
+
 end
 
 
